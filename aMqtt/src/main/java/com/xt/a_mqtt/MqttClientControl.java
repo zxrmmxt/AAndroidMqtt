@@ -1,4 +1,4 @@
-package com.xt.m_mqtt;
+package com.xt.a_mqtt;
 
 import com.xt.m_common_utils.MLogUtil;
 
@@ -25,7 +25,7 @@ public class MqttClientControl {
         }
         MqttBean mqttBean = MqttParamsUtils.getMqttProperties();
         mqttClient = new MqttClient(MqttParamsUtils.getMqttServerUrl(mqttBean), mqttBean.getClientID(), new MemoryPersistence());
-        mqttClient.setCallback(new MyMqttCallback());
+        mqttClient.setCallback(new AMqttCallback());
     }
 
     //连接到到服务器,退出应用前未断开mqtt连接，下次进来时，mqttClient状态为未连接，调用连接的方法时会连接失败，应该是应用上次和服务器的连接还在，退出应用是否要断开

@@ -1,4 +1,4 @@
-package com.xt.m_mqtt;
+package com.xt.a_mqtt;
 
 import com.xt.m_common_utils.MLogUtil;
 
@@ -11,8 +11,8 @@ import org.eclipse.paho.client.mqttv3.MqttMessage;
  * mqtt断开连接，接收到消息，发送消息成功的回调
  */
 
-class MyMqttCallback implements MqttCallback {
-    private static final String TAG = MyMqttCallback.class.getSimpleName();
+class AMqttCallback implements MqttCallback {
+    private static final String TAG = AMqttCallback.class.getSimpleName();
 
     @Override
     public void connectionLost(Throwable cause) {

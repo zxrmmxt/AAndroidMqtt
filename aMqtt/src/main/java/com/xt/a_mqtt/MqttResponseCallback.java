@@ -1,4 +1,4 @@
-package com.xt.m_mqtt;
+package com.xt.a_mqtt;
 
 import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken;
 import org.eclipse.paho.client.mqttv3.MqttException;

@@ -1,4 +1,4 @@
-package com.xt.m_mqtt;
+package com.xt.a_mqtt;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
